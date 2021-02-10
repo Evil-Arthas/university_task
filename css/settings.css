@@ -1,0 +1,16 @@
+.main-holder {
+    font-style: normal;
+    font-size: 28px;
+    line-height: 125%;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 0 0 50px
+}
+
+.submit:hover, .submit:focus, .submit:active {
+    outline: none;
+    text-decoration: none;
+    border: 1px solid #fadf82;
+    color: #00ff00;
+}
