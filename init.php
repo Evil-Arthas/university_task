@@ -1,15 +1,23 @@
 <?php
 // Определение языка
+//var_dump($_COOKIE);
+//var_dump($_COOKIE['language']);
+if(!$_COOKIE['language']){
+    setcookie('language','ua');
+}
 
-switch ($_COOKIE['language']) {
+
+
+
+/*switch ($_COOKIE['language']) {
     case 'ru':
-        setcookie('language', 'ru');
+        $_COOKIE['language'] = 'ru';
         break;
     case 'eng':
-        setcookie('language', 'eng');
+        $_COOKIE['language'] = 'eng';
         break;
     default:
-        setcookie('language', 'ua');
+        $_COOKIE['language'] = 'ua';
         break;
-}
-var_dump($_COOKIE);
+}*/
+//var_dump($_COOKIE);

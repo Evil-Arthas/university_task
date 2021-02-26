@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Main</title>
+    <title>Authors</title>
     <link href="css/app.css" rel="stylesheet">
     <link href="css/language_selector.css" rel="stylesheet">
     <script src="js/language.js"></script>
@@ -52,35 +52,35 @@ require_once('lang/menu_mess.php');
         </div>
 
         <div class="hold-box__content">
-            <div class="page-title">
-                <span><?= $MESS['TITLE'] ?></span>
-            </div>
-
-            <div class="card-list">
-                <a href="labs/power_circle_diagram/" class="card">
-                    <span class="card-title"><?= $MESS['LAB_1'] ?></span>
-                </a>
-
-                <a href="#" class="card">
-                    <span class="card-title"><?= $MESS['LAB_IN_PROGRESS'] ?></span>
-                </a>
-
-                <a href="#" class="card">
-                    <span class="card-title"><?= $MESS['LAB_IN_PROGRESS'] ?></span>
-                </a>
-
-                <a href="#" class="card">
-                    <span class="card-title"><?= $MESS['LAB_IN_PROGRESS'] ?></span>
-                </a>
-
-                <a href="#" class="card">
-                    <span class="card-title"><?= $MESS['LAB_IN_PROGRESS'] ?></span>
-                </a>
-
-                <a href="#" class="card">
-                    <span class="card-title"><?= $MESS['LAB_IN_PROGRESS'] ?></span>
-                </a>
-            </div>
+<!--            <div class="page-title">-->
+<!--                <span>--><?//= $MESS['TITLE'] ?><!--</span>-->
+<!--            </div>-->
+<!---->
+<!--            <div class="card-list">-->
+<!--                <a href="labs/power_circle_diagram/" class="card">-->
+<!--                    <span class="card-title">--><?//= $MESS['LAB_1'] ?><!--</span>-->
+<!--                </a>-->
+<!---->
+<!--                <a href="#" class="card">-->
+<!--                    <span class="card-title">--><?//= $MESS['LAB_IN_PROGRESS'] ?><!--</span>-->
+<!--                </a>-->
+<!---->
+<!--                <a href="#" class="card">-->
+<!--                    <span class="card-title">--><?//= $MESS['LAB_IN_PROGRESS'] ?><!--</span>-->
+<!--                </a>-->
+<!---->
+<!--                <a href="#" class="card">-->
+<!--                    <span class="card-title">--><?//= $MESS['LAB_IN_PROGRESS'] ?><!--</span>-->
+<!--                </a>-->
+<!---->
+<!--                <a href="#" class="card">-->
+<!--                    <span class="card-title">--><?//= $MESS['LAB_IN_PROGRESS'] ?><!--</span>-->
+<!--                </a>-->
+<!---->
+<!--                <a href="#" class="card">-->
+<!--                    <span class="card-title">--><?//= $MESS['LAB_IN_PROGRESS'] ?><!--</span>-->
+<!--                </a>-->
+<!--            </div>-->
         </div>
     </div>
 </div>

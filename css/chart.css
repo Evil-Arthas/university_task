@@ -1,0 +1,10 @@
+.chart {
+    width: 500px;
+    height: 500px;
+
+}
+
+.chart canvas {
+    width: 100%;
+
+}
