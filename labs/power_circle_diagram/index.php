@@ -68,16 +68,16 @@ require_once('../../init.php');
 
             <form class="form-main" action="action.php" method="post">
                 <div class="form-main__box">
-                    <input type="text" name="1" class="form-main__input" placeholder="Voltage G1, U1 kV">
-                    <input type="text" name="1" class="form-main__input" placeholder="Voltage G2, U2 kV">
-                    <input type="text" name="1" class="form-main__input" placeholder="Angle delta, degr">
-                    <input type="text" name="1" class="form-main__input" placeholder="Transformer T1, RT1">
-                    <input type="text" name="1" class="form-main__input" placeholder="Transformer T1, XT1">
-                    <input type="text" name="1" class="form-main__input" placeholder="Transformer T2, RT2"">
-                    <input type="text" name="1" class="form-main__input" placeholder="Transformer T2, XT2"">
-                    <input type="text" name="1" class="form-main__input" placeholder="Line, RL">
-                    <input type="text" name="1" class="form-main__input" placeholder="Line, XL">
-                    <input type="text" name="1" class="form-main__input" placeholder="Line, BL">
+                    <input type="text" name="G1" class="form-main__input" placeholder="Voltage G1, U1 kV">
+                    <input type="text" name="G2" class="form-main__input" placeholder="Voltage G2, U2 kV">
+                    <input type="text" name="delta" class="form-main__input" placeholder="Angle delta, degr">
+                    <input type="text" name="RT1" class="form-main__input" placeholder="Transformer T1, RT1">
+                    <input type="text" name="XT1" class="form-main__input" placeholder="Transformer T1, XT1">
+                    <input type="text" name="RT2" class="form-main__input" placeholder="Transformer T2, RT2"">
+                    <input type="text" name="XT2" class="form-main__input" placeholder="Transformer T2, XT2"">
+                    <input type="text" name="RL" class="form-main__input" placeholder="Line, RL">
+                    <input type="text" name="XL" class="form-main__input" placeholder="Line, XL">
+                    <input type="text" name="BL" class="form-main__input" placeholder="Line, BL">
                 </div>
 
                 <div class="form-main__box">
@@ -94,6 +94,9 @@ require_once('../../init.php');
                     <input type="text" name="1" class="form-main__input" placeholder="Active power P2, kW">
                     <input type="text" name="1" class="form-main__input" placeholder="Reactive power Q1, kvar">
                     <input type="text" name="1" class="form-main__input" placeholder="Reactive power Q2, kvar">
+                </div>
+                <div>
+                    <input type="submit" />
                 </div>
             </form>
         </div>
