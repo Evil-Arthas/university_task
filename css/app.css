@@ -427,7 +427,14 @@ td, th {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-main__button {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
 }
 
 .form-main__box {

@@ -95,7 +95,8 @@ require_once('../../init.php');
                     <input type="text" name="1" class="form-main__input" placeholder="Reactive power Q1, kvar">
                     <input type="text" name="1" class="form-main__input" placeholder="Reactive power Q2, kvar">
                 </div>
-                <div>
+
+                <div class="form-main__button">
                     <input type="submit" />
                 </div>
             </form>
