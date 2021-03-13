@@ -526,3 +526,58 @@ input[type=submit] {
     -webkit-border-radius: 5px;
     border-radius: 5px;
 }
+
+input[type=button] {
+    padding:5px 15px;
+    background:#ccc;
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.form-main__p {
+    display: block;
+    margin: 0 0 8px;
+    width: 100%;
+    height: 46px;
+    border: 1px solid #2877bb;
+    border-radius: 10px;
+    background: #d3d3d3;
+    outline: none;
+    padding: 0 10px;
+    text-decoration: none;
+    -webkit-transition: 150ms;
+    -o-transition: 150ms;
+    transition: 150ms;
+    color: black;
+    font-size: 16px;
+    line-height: 44px
+}
+
+.form-main__p:hover {
+    outline: none;
+    border: 1px solid black
+}
+
+.form-main__p:focus, .form-main__p:active {
+    outline: none;
+    border: 1px solid #fff
+}
+
+.chartDiv {
+    text-align: -webkit-center;
+}
+
+.form-main__img{
+    text-align: -webkit-center;
+}
+
+.errors{
+    color: red;
+    text-align: -webkit-center;
+}
+.errors{
+    color: green;
+    text-align: -webkit-center;
+}

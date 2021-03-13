@@ -14,8 +14,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.bundle.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.bundle.min.js"></script>
-    <!--    <script src="https://code.jquery.com/jquery-3.1.1.min.js"-->
-    <!--            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <script src="js/graphics.js"></script>
     <script src="../../js/language.js"></script>
@@ -25,7 +23,11 @@
 //подключение языквого файла
 require_once('lang/index_mess.php');
 require_once('../../lang/menu_mess.php');
+require_once('../../lang/other_mess.php');
 require_once('../../init.php');
+/**
+ * @var $MESS array
+ */
 ?>
 <div class="wrapper-box">
     <div class="hold-box">
@@ -66,8 +68,8 @@ require_once('../../init.php');
                 <span><?= $MESS['TITLE'] ?></span>
             </div>
 
-            <form class="form-main" action="action.php" method="post">
-                <div class="form-main__box">
+            <form class="form-main" action="#">
+                <div class="form-main__box" form-input-values>
                     <input type="text" name="G1" class="form-main__input" placeholder="Voltage G1, U1 kV">
                     <input type="text" name="G2" class="form-main__input" placeholder="Voltage G2, U2 kV">
                     <input type="text" name="delta" class="form-main__input" placeholder="Angle delta, degr">
@@ -81,37 +83,45 @@ require_once('../../init.php');
                 </div>
 
                 <div class="form-main__box">
+                    <div class="errors"></div>
+                    <div class="success"></div>
                     <div class="form-main__img">
                         <img src="../../img/lab1.jpg" alt="">
+                    </div>
+                    <br>
+                    <div class="form-main__img">
+                        <img src="../../img/lab1_1.png" alt="">
+                    </div>
+                    <div class="chartDiv">
+                        <div class="chart">
+                            <canvas id="myChart" width="100" height="100"></canvas>
+                        </div>
                     </div>
                 </div>
 
                 <div class="form-main__box">
-                    <input type="text" name="1" class="form-main__input" placeholder="Angle delta, degr">
-                    <input type="text" name="1" class="form-main__input" placeholder="Current I1, A">
-                    <input type="text" name="1" class="form-main__input" placeholder="Current I2, A">
-                    <input type="text" name="1" class="form-main__input" placeholder="Active power P1, kW">
-                    <input type="text" name="1" class="form-main__input" placeholder="Active power P2, kW">
-                    <input type="text" name="1" class="form-main__input" placeholder="Reactive power Q1, kvar">
-                    <input type="text" name="1" class="form-main__input" placeholder="Reactive power Q2, kvar">
+                    <p class="form-main__input">Angle delta, degr: </p>
+                    <p class="form-main__input">Current I1, A: </p>
+                    <p class="form-main__input">Current I2, A: </p>
+                    <p class="form-main__input">Active power P1, kW: </p>
+                    <p class="form-main__input">Active power P2, kW: </p>
+                    <p class="form-main__input">Reactive power Q1, kvar: </p>
+                    <p class="form-main__input">Reactive power Q2, kvar: </p>
                 </div>
 
                 <div class="form-main__button">
-                    <input type="submit" />
+                    <input submit-batton-lib-1 type="button" value="<?php echo $MESS["BUTTON_SUBMIT"]?>"/>
                 </div>
             </form>
         </div>
     </div>
 </div>
 <br>
-<div class="page-title">
-    <span><?= 'Пример графика' ?></span>
-</div>
-<br>
 <br>
 <div class="chart">
     <canvas id="myChart" width="100" height="100"></canvas>
 </div>
+<script src="../../js/main.js"></script>
 </body>
 </html>
 
