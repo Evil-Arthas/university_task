@@ -68,7 +68,7 @@ require_once('../../init.php');
                 <span><?= $MESS['TITLE'] ?></span>
             </div>
 
-            <form class="form-main" action="#">
+            <form class="form-main" action="!">
                 <div class="form-main__box" form-input-values>
                     <input type="text" name="G1" class="form-main__input" placeholder="Voltage G1, U1 kV">
                     <input type="text" name="G2" class="form-main__input" placeholder="Voltage G2, U2 kV">
@@ -92,10 +92,9 @@ require_once('../../init.php');
                     <div class="form-main__img">
                         <img src="../../img/lab1_1.png" alt="">
                     </div>
-                    <div class="chartDiv">
-                        <div class="chart">
-                            <canvas id="myChart" width="100" height="100"></canvas>
-                        </div>
+                    <div class="form-main__button">
+                        <input submit-batton-lib-1 type="submit" value="<?php
+                        echo $MESS["BUTTON_SUBMIT"] ?>"/>
                     </div>
                 </div>
 
@@ -108,18 +107,38 @@ require_once('../../init.php');
                     <p class="form-main__input">Reactive power Q1, kvar: </p>
                     <p class="form-main__input">Reactive power Q2, kvar: </p>
                 </div>
-
-                <div class="form-main__button">
-                    <input submit-batton-lib-1 type="button" value="<?php echo $MESS["BUTTON_SUBMIT"]?>"/>
-                </div>
             </form>
         </div>
+        <br>
+        <br>
+        <br>
+        <div class="page-title" result style="display: none">
+            <span><?= $MESS['RESULT'] ?></span>
+        </div>
+
+        <div class="card-list">
+            <div class="graphics-card">
+                <canvas id="chartI1" height="150"></canvas>
+            </div>
+            <div class="graphics-card">
+                <canvas id="chartI2" height="150"></canvas>
+            </div>
+            <div class="graphics-card">
+                <canvas id="chartP1" height="150"></canvas>
+            </div>
+            <div class="graphics-card">
+                <canvas id="chartP2" height="150"></canvas>
+            </div>
+
+            <div class="graphics-card">
+                <canvas id="chartQ1" height="150"></canvas>
+            </div>
+
+            <div class="graphics-card">
+                <canvas id="chartQ2" height="150"></canvas>
+            </div>
+        </div>
     </div>
-</div>
-<br>
-<br>
-<div class="chart">
-    <canvas id="myChart" width="100" height="100"></canvas>
 </div>
 <script src="../../js/main.js"></script>
 </body>
